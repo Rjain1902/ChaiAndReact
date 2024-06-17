@@ -1,4 +1,5 @@
-function ColourButton({ color_data, clickHandler }) {
+function ColourButton(props) {
+    const { color_data, clickHandler }=props
   return (
     <button
       onClick={() => clickHandler(color_data)}
