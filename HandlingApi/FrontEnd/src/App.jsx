@@ -3,6 +3,7 @@ import axios from "axios";
 import "./App.css";
 
 //  Edge Case=> Error, loading,race condition , debouncing
+//COntroller used to avoide race condition
 function App() {
   const [search, setSearch] = useState("bed");
   const [product, loading, error] = customReactQuery(
